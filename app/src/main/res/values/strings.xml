@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Course Resgistration</string>
+    <string name="title">Course Registration</string>
+    <string name="name">NAME</string>
+    <string name="courses">COURSE</string>
+    <string name="fee">FEE</string>
+    <string name="add">ADD</string>
+    <string name="view">VIEW</string>
+    <string name="delete">DELETE</string>
+    <string name="edit">EDIT</string>
+    <string name="email">EMAIL</string>
+    <string name="back">BACK</string>
+    <string name="id">ID</string>
+</resources>
