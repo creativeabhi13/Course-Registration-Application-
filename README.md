@@ -2,7 +2,9 @@
 
 
 
+#
 Problem Statement:
+
 Created an Android application to perform daily tasks of cataloging. Features include adding items along with their price and stock availability, updating existing items in the database, and also deleting the items that are not required. Items in the database can also be viewed.
 
 Input and Output Diagram
