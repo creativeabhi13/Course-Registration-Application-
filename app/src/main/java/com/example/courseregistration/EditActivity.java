@@ -50,7 +50,12 @@ public class EditActivity extends AppCompatActivity {
         btn_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Delete();
+                try {
+                    Delete();
+                }
+                catch (DeleteException e){
+
+                }
             }
         });
 
@@ -71,14 +76,19 @@ public class EditActivity extends AppCompatActivity {
         btn_edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Edit();
+                try {
+                    Edit();
+                }
+                catch (EditException e){
+                    
+                }
             }
         });
     }
 
     // delete the data
 
-    public void Delete()
+    public void Delete() throws DeleteException
     {
         try
         {
@@ -109,7 +119,7 @@ public class EditActivity extends AppCompatActivity {
         }
     }
 
-    public void Edit()
+    public void Edit() throws EditException
     {
         try
         {

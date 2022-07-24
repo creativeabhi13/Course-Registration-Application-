@@ -40,7 +40,13 @@ public class MainActivity extends AppCompatActivity  {
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                insert();
+
+      try {
+          insert();
+      }
+               catch (InsertException e) {
+
+               }
             }
         });
 
@@ -49,7 +55,7 @@ public class MainActivity extends AppCompatActivity  {
 
     public void onClick(View v) {
 
-        insert();
+        //insert();
         if (v.equals(btn_add)) {
             Intent it = new Intent(this, viewActivity.class);
             startActivity(it);
@@ -64,7 +70,7 @@ public class MainActivity extends AppCompatActivity  {
 
     // insert operation of data
 
-    public void insert(){
+    public void insert() throws InsertException{
          try {
              String n= name.getText().toString();
              String e=email.getText().toString();
